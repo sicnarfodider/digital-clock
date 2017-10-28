@@ -1,0 +1,79 @@
+body{
+  background-color: black;
+}
+.readout{
+  height: 33vh;
+  width: 100vw;
+}
+.digit{
+  background-color: black;
+  height: 100%;
+  width: 15%;
+  box-sizing: border-box;
+
+  position: relative;
+  float: left;
+}
+.segment{
+  background-color: red;
+  color: white;
+  height: 35%;
+  width: 10%;
+  position: absolute;
+  transform-origin: 0% 0%;
+  margin: 5%
+}
+.segment.wide{
+  width: 70%;
+  height: 5%;
+}
+.segment:nth-child(1){
+  left: 10%;
+  top: 5%;
+}
+.segment:nth-child(2){
+  right: 0%;
+  top:10%;
+}
+.segment:nth-child(3){
+  top: 50%;
+  left: 10%;
+  transform: translateY(-100%);
+}
+.segment:nth-child(4){
+  right: 0%;
+  bottom: 10%;
+}
+.segment:nth-child(5){
+  right: 10%;
+  bottom: 5%;
+}
+.segment:nth-child(6){
+  left: 0%;
+  top: 10%;
+}
+.segment:nth-child(7){
+  left: 0%;
+  bottom: 10%;
+}
+.colon{
+  width: 3%;
+  height: 100%;
+  background-color: black;
+  float: left;
+  position: relative;
+}
+.colon::before, .colon::after{
+  content: '';
+  height: 10%;
+  width: 90%;
+  background-color: red;
+  position: absolute;
+  border-radius: 20%;  
+}
+.colon::before{
+  top: 25%;
+}
+.colon::after{
+  bottom: 25%;
+}
